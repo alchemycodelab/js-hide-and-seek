@@ -27,14 +27,14 @@ function getRandomItem(arr) {
 }
 
 function handleGuess(userGuess, correctSpot) {
+    console.log('=============================\n');
+    console.log('|| userGuess', userGuess);
+    console.log('\n=============================');
     resetStyles();
     totalGuesses++;
 
     const correctHidingPlaceEl = document.getElementById(`${correctSpot}-container`);
 
-    console.log('=============================\n');
-    console.log('|| cor', correctHidingPlaceEl);
-    console.log('\n=============================');
     correctHidingPlaceEl.classList.add('face');
 
     if (userGuess === correctSpot) {
