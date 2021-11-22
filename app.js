@@ -27,9 +27,6 @@ function getRandomItem(arr) {
 }
 
 function handleGuess(userGuess, correctSpot) {
-    console.log('=============================\n');
-    console.log('|| userGuess', userGuess);
-    console.log('\n=============================');
     resetStyles();
     totalGuesses++;
 
